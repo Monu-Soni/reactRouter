@@ -29,7 +29,7 @@ const [menu, setmenu] = useState("hidden")
                             Get started
                         </Link>
                     </div>
-                    <div className='  lg:hidden inline-block order-0' onClick={showMenu}>menu</div>
+                    <button className='  lg:hidden inline-block order-0' onClick={showMenu}>{menu == "hidden" ? "Menu" : "X" }</button>
                     <div className={`${menu} justify-between items-center w-full lg:flex lg:w-auto lg:order-1`} id="mobile-menu">
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
